@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode ( of = "id")
 public class Endereco {
-    private String logradoro ;
+    private String logradouro ;
     private String bairro ;
     private String cep ;
     private String cidade ;
@@ -21,7 +21,7 @@ public class Endereco {
     private  String complemento ;
 
     public Endereco(DadosEndereco dados) {
-        this.logradoro= dados.lograduro();
+        this.logradouro= dados.logradouro();
         this.bairro= dados.bairro();
         this.cep= dados.cep();
         this.cidade = dados.cidade();
